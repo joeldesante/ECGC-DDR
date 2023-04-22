@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"title": "Only Way",
+		"artist": "SameOne UK",
+		"resource_uri": "res://songs/only_way.wav",
+		"timings": ""
+	},
+	{
+		"id": 2,
+		"title": "Black & White",
+		"artist": "TnT Company",
+		"resource_uri": "res://songs/tnt_company_bw.wav",
+		"timings": ""
+	},
+	{
+		"id": 3,
+		"title": "PHONKY KILLAH",
+		"artist": "LHM & RHESTRO",
+		"resource_uri": "res://songs/phonky_killah.mp3",
+		"timings": ""
+	},
+	{
+		"id": 4,
+		"title": "I Got You",
+		"artist": "MGR 7TH",
+		"resource_uri": "res://songs/got_you.wav",
+		"timings": ""
+	},
+	{
+		"id": 5,
+		"title": "Scream",
+		"artist": "Tatiche",
+		"resource_uri": "res://songs/scream.mp3",
+		"timings": ""
+	},
+	{
+		"id": 6,
+		"title": "Thor's Hammer",
+		"artist": "Ethan Meixsell",
+		"resource_uri": "res://songs/thors_hammer.mp3",
+		"timings": ""
+	},
+]

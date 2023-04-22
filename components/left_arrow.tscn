@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp1drb65dqcjv"]
+
+[ext_resource type="Texture2D" uid="uid://cwqmt7wp45d2p" path="res://assets/arrow.png" id="1_jwsni"]
+
+[node name="LeftArrow" type="TextureRect"]
+offset_left = 232.0
+offset_top = 500.0
+offset_right = 744.0
+offset_bottom = 1012.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_jwsni")

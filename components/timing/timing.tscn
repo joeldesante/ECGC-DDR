@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfjufxtlotayt"]
+
+[ext_resource type="Script" path="res://components/timing/timing.gd" id="1_kl183"]
+[ext_resource type="Texture2D" uid="uid://ci2ne3q26bpbt" path="res://arrow.png" id="2_mxb5m"]
+
+[node name="Timing" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_kl183")
+
+[node name="Arrow" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 240.0
+pivot_offset = Vector2(120, 120)
+texture = ExtResource("2_mxb5m")

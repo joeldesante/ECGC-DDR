@@ -1,0 +1,94 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjmv2ba1j0gkw"]
+
+[ext_resource type="Script" path="res://GameInputDisplay.gd" id="1_sqn4u"]
+[ext_resource type="AudioStream" uid="uid://dht3cbldsbckg" path="res://songs/only_way.wav" id="2_xnnyo"]
+[ext_resource type="Texture2D" uid="uid://idpqvrcqpqc" path="res://components/timing/arrow.png" id="3_mq3lw"]
+[ext_resource type="Script" path="res://scenes/StatusLabel.gd" id="5_h7olt"]
+
+[node name="StageA" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("1_sqn4u")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Node"]
+stream = ExtResource("2_xnnyo")
+
+[node name="CharacterSprite" type="Sprite2D" parent="Node"]
+scale = Vector2(0.45, 0.45)
+
+[node name="InterfaceOverlay" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -575.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 325.0
+
+[node name="Control" type="Control" parent="InterfaceOverlay"]
+anchors_preset = 0
+scale = Vector2(0.25, 0.25)
+
+[node name="Arrow" type="TextureRect" parent="InterfaceOverlay/Control"]
+layout_mode = 2
+offset_right = 240.0
+offset_bottom = 240.0
+pivot_offset = Vector2(120, 120)
+texture = ExtResource("3_mq3lw")
+flip_h = true
+
+[node name="Control2" type="Control" parent="InterfaceOverlay"]
+anchors_preset = 0
+offset_left = 100.0
+offset_right = 100.0
+scale = Vector2(0.25, 0.25)
+
+[node name="Arrow" type="TextureRect" parent="InterfaceOverlay/Control2"]
+layout_mode = 2
+offset_right = 240.0
+offset_bottom = 240.0
+rotation = 1.5708
+pivot_offset = Vector2(120, 120)
+texture = ExtResource("3_mq3lw")
+flip_h = true
+
+[node name="Control3" type="Control" parent="InterfaceOverlay"]
+anchors_preset = 0
+offset_left = 200.0
+offset_right = 200.0
+scale = Vector2(0.25, 0.25)
+
+[node name="Arrow" type="TextureRect" parent="InterfaceOverlay/Control3"]
+layout_mode = 2
+offset_right = 240.0
+offset_bottom = 240.0
+rotation = 1.5708
+pivot_offset = Vector2(120, 120)
+texture = ExtResource("3_mq3lw")
+
+[node name="Control4" type="Control" parent="InterfaceOverlay"]
+anchors_preset = 0
+offset_left = 300.0
+offset_right = 300.0
+scale = Vector2(0.25, 0.25)
+
+[node name="Arrow" type="TextureRect" parent="InterfaceOverlay/Control4"]
+layout_mode = 2
+offset_right = 240.0
+offset_bottom = 240.0
+pivot_offset = Vector2(120, 120)
+texture = ExtResource("3_mq3lw")
+
+[node name="Label" type="Label" parent="InterfaceOverlay"]
+layout_mode = 0
+offset_left = 816.0
+offset_top = 13.0
+offset_right = 1134.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "AAAAAA"
+script = ExtResource("5_h7olt")
+
+[connection signal="draw_arrow" from="Node" to="." method="_on_node_draw_arrow"]
+[connection signal="update_status" from="Node" to="InterfaceOverlay/Label" method="_on_node_update_status"]

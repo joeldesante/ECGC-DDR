@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b7abt7yqwu8ib"]
+
+[node name="SongOption" type="Button"]
+offset_right = 110.0
+offset_bottom = 48.0
+text = "SONG NAME"
+alignment = 0

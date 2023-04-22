@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://b124hcs63jnjy"]
+
+[ext_resource type="Script" path="res://scenes/SongList.gd" id="1_paggj"]
+
+[node name="main" type="Node2D"]
+
+[node name="menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1159.0
+offset_bottom = 646.0
+
+[node name="song_list" type="VBoxContainer" parent="menu"]
+layout_mode = 0
+offset_right = 122.0
+offset_bottom = 646.0
+script = ExtResource("1_paggj")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="menu/song_list"]
